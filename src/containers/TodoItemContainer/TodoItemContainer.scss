@@ -1,0 +1,17 @@
+.todo {
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__form {
+		margin-top: 3rem;
+	}
+
+	&__buttons-container {
+		margin-top: 2rem;
+	}
+
+}

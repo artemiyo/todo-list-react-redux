@@ -1,0 +1,45 @@
+.btn {
+  height: 3.6rem;
+  width: 14.7rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #fff;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 1.4rem;
+  transition: all 0.2s ease;
+
+  &--add {
+
+    border: 2px solid #39b54a;
+
+    &:hover {
+      background-color: #39b54a;
+      color: white;
+    }
+  }
+
+  &--delete {
+
+    border: 2px solid #ff0000;
+
+    &:hover {
+      background-color: #ff0000;
+      color: white;
+    }
+  }
+
+  &--back {
+
+    border: 2px solid #0071bc;
+    
+    &:hover {
+      background-color: #0071bc;
+      color: white;
+    }
+  }
+}
+
+
+
+
+

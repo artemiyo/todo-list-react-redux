@@ -1,0 +1,14 @@
+.todos {
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+
+  &__title {
+    font-size: 3.2rem;
+  }
+
+}
