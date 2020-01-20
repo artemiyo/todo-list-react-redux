@@ -9,7 +9,6 @@ export const actionTypes = {
     CREATE_TODO_FAILURE: 'CREATE_TODO_FAILURE',
     // Получить выбранный todo
     GET_SELECTED_TODO: 'GET_SELECTED_TODO',
-    GET_TODO: 'GET_TODO',
     // Изменить выбранный todo
     CHANGE_TODO_START: 'CHANGE_TODO_START',
     CHANGE_TODO_SUCCESS: 'CHANGE_TODO_SUCCESS',

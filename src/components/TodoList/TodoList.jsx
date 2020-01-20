@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './TodoList.scss';
 //Components
 import TodoItem from '../TodoItem/TodoItem'

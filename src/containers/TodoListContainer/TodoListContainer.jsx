@@ -12,7 +12,9 @@ const TodoListContainer = ({ todos, isLoading, fetchTodoList }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        fetchTodoList()
+        if(todos.length === 0) {
+            fetchTodoList()
+        }
     }, [])
 
     return (

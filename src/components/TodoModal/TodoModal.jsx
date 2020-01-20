@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 import './TodoModal.scss';
-
-import { isInputValid } from '../../validators/validators'
 // Actions
-import { createTodo, fetchTodoList } from '../../redux/actions'
+import { createTodo } from '../../redux/actions'
 // Components
 import Input from "../Input/Input";
 import Button from "../Button/Button";
 import ErrorMessages from '../ErrorMessages/ErrorMessages';
 
+import { isInputValid } from '../../validators/validators'
 
-const TodoModal = ({ createTodo, isOpen, setIsOpen, fetchTodoList }) => {
+
+const TodoModal = ({ createTodo, isOpen, setIsOpen }) => {
 
     const [title, setTitle] = useState('');
     const [errors, setErrors] = useState([]);
@@ -43,4 +42,4 @@ const TodoModal = ({ createTodo, isOpen, setIsOpen, fetchTodoList }) => {
     )
 }
 
-export default connect(null, { createTodo, fetchTodoList })(TodoModal);
+export default connect(null, { createTodo })(TodoModal);

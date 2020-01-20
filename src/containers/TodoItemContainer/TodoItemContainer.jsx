@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { connect } from 'react-redux';
 import { compose } from 'redux'
 import { Link, withRouter } from 'react-router-dom'
@@ -55,7 +55,7 @@ const TodoItemContainer = ({ selectedTodo, fetchTodoList, history, changeTodo, d
                 <h1>Задача № { todo.id }</h1>
                 <Button onClick={() => onDelete()} className="btn btn--delete">Удалить</Button>
             </div>
-            <form className="todo__form" onSubmit={handleSubmit}>
+            <form className="todo__form" onSubmit={ handleSubmit }>
                 <Input
                     name="title"
                     value={ newTodo.title || todo.title }

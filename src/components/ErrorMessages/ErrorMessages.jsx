@@ -3,7 +3,7 @@ import './ErrorMessages.scss';
 
 const ErrorMessages = ({ errors }) => {
 	return (
-		errors.map((error, i) => <p key={i}>{error.message}</p>)
+		errors.map(error => <p>{error.message}</p>)
 	)
 }
 
